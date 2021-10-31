@@ -1,0 +1,42 @@
+{
+  "name": "dott-assessment",
+  "version": "0.0.1",
+  "description": "The code for the assessment given by Dott",
+  "author": "Mohammadreza Bidgoli <bd@ipm.ir>",
+  "repository": "https://github.com/metachris/typescript-boilerplate",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "assesment"
+  ],
+  "main": "./dist/tsc/main.js",
+  "types": "./dist/tsc/main.d.ts",
+  "scripts": {
+    "start": "node -r ts-node/register ./src/main.ts",
+    "lint": "eslint .",
+    "test": "mocha --require ts-node/register ./test/*.ts",
+    "clean": "rm -rf dist build package",
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^15.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-folders": "^1.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsdoc": "^37.0.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  }
+}
